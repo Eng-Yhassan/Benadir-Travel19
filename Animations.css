@@ -213,15 +213,15 @@ ul li:hover {
     }
 }
 
-.Tour_types {
-    h4 {
-        animation: Tour_types 1s ease-out;
-    }
 
-    h1 {
-        animation: Tour_types 1s ease-out;
-    }
+.Tour_types h4 {
+    animation: Tour_types 1s ease-out;
 }
+
+.Tour_types h1 {
+    animation: Tour_types 1s ease-out;
+}
+
 
 @keyframes Tour_types {
     from {
@@ -636,14 +636,15 @@ ul li:hover {
 
 /* latestTravelCards */
 .latestTravelCards {
-    animation:  LatestTravelCards 0.6s ease-out;
+    animation: LatestTravelCards 0.6s ease-out;
 }
 
 @keyframes LatestTravelCards {
-    from{
+    from {
         transform: translateX(-400px);
     }
-    to{
+
+    to {
         transform: translateX(0);
     }
 }

@@ -57,53 +57,42 @@ a {
     justify-content: space-between;
     align-items: center;
     padding: 15px 20px;
-
-    /* Mainheader h1-logo */
-    h1 {
-        color: var(--secondry-color);
-    }
+}
 
 
-
-    /* Mainheader ul */
-    ul {
-        display: flex;
-        gap: 30px;
-        font-size: 20px;
-        margin-top: 20px;
-
-        /* margin-right: 200px; */
-        /* Home page */
-        #Home,
-        #About,
-        #Tours,
-        #Blog {
-            color: var(--secondry-color);
-        }
-
-
-    }
-
-    /* Mainheader sign_&_login */
-    .sign-login {
-        a {
-            margin-right: 10px;
-            font-style: normal;
-            background-color: var(--secondry-color);
-            padding: 4px 14px;
-            border-radius: 2px;
-            color: var(--forth-color);
-
-        }
-
-
-    }
+/* Mainheader h1-logo */
+.mainheader h1 {
+    color: var(--secondry-color);
+}
 
 
 
+/* Mainheader ul */
+.mainheader ul {
+    display: flex;
+    gap: 30px;
+    font-size: 20px;
+    margin-top: 20px;
 
+    /* margin-right: 200px; */
+    /* Home page */
+}
 
+.mainheader ul #Home,
+#About,
+#Tours,
+#Blog {
+    color: var(--secondry-color);
+}
 
+/* Mainheader sign_&_login */
+.sign-login a {
+    margin-right: 10px;
+    font-style: normal;
+    background-color: var(--secondry-color);
+    padding: 4px 14px;
+    border-radius: 2px;
+    color: var(--forth-color);
 }
 
 .mainheader i {
@@ -163,21 +152,21 @@ a {
 .Tour_types {
     padding: 90px 10px;
     background-color: var(--bacckground-color);
+}
 
-    h4 {
-        color: var(--main-color);
-        font-family: var(--font-style);
-        font-size: 30px;
-        font-weight: bold;
-        text-align: center;
-    }
+.Tour_types h4 {
+    color: var(--main-color);
+    font-family: var(--font-style);
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
 
-    h1 {
-        color: var(--third-color);
-        font-size: 30px;
-        text-align: center;
-        font-weight: bolder;
-    }
+.Tour_types h1 {
+    color: var(--third-color);
+    font-size: 30px;
+    text-align: center;
+    font-weight: bolder;
 }
 
 
@@ -198,13 +187,14 @@ a {
     text-align: center;
     margin-top: 50px;
 
-    i {
-        background-color: var(--fifth-color);
-        padding: 16px;
-        margin-bottom: 14px;
-        border-radius: 50%;
-        font-size: 30px;
-    }
+}
+
+.tour_c1 i {
+    background-color: var(--fifth-color);
+    padding: 16px;
+    margin-bottom: 14px;
+    border-radius: 50%;
+    font-size: 30px;
 }
 
 
@@ -215,16 +205,17 @@ a {
     color: var(--forth-color);
     background-color: var(--main-color);
 
-    h4 {
-        text-align: center;
-        font-family: var(--font-style);
-        font-size: 29px;
-        color: var(--fifth-color);
-    }
+}
 
-    h1 {
-        text-align: center;
-    }
+.Fetured_tours h4 {
+    text-align: center;
+    font-family: var(--font-style);
+    font-size: 29px;
+    color: var(--fifth-color);
+}
+
+.Fetured_tours h1 {
+    text-align: center;
 }
 
 .Fetured_cards {
@@ -246,60 +237,63 @@ a {
     color: var(--third-color);
     border-radius: 8px;
 
-    img {
-        width: 250px;
-        border-radius: 8px 84px 0px 0px;
+}
 
-    }
-
-    p {
-        font-weight: lighter;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        margin-left: 4px;
-
-    }
-
-    h2 {
-        margin-left: 4px;
-        font-size: 23px;
-    }
-
-    .mainReview {
-        border-bottom: 1px solid black;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding-right: 10px;
-
-        .clock {
-            font-size: 20px;
-            font-weight: lighter;
-            margin-right: 10px;
-        }
-    }
-
-    .reviews {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        font-weight: lighter;
-
-        p {
-            background-color: var(--fifth-color);
-            padding: 3px;
-            border-radius: 2px;
-        }
-    }
-
-    .price {
-        display: flex;
-        justify-content: space-around;
-        font-weight: lighter;
-
-    }
+.Fetured_card1 img {
+    width: 250px;
+    border-radius: 8px 84px 0px 0px;
 
 }
+
+.Fetured_card1 p {
+    font-weight: lighter;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 4px;
+
+}
+
+.Fetured_card1 h2 {
+    margin-left: 4px;
+    font-size: 23px;
+}
+
+.Fetured_card1 .mainReview {
+    border-bottom: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 10px;
+
+}
+
+.Fetured_card1 .mainReview .clock {
+    font-size: 20px;
+    font-weight: lighter;
+    margin-right: 10px;
+}
+
+.Fetured_card1 .reviews {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: lighter;
+
+}
+
+.Fetured_card1 .reviews p {
+    background-color: var(--fifth-color);
+    padding: 3px;
+    border-radius: 2px;
+}
+
+.Fetured_card1 .price {
+    display: flex;
+    justify-content: space-around;
+    font-weight: lighter;
+
+}
+
 
 
 
@@ -311,21 +305,20 @@ a {
     position: relative;
     display: flex;
     justify-content: space-between;
+}
 
-    p {
-        color: var(--main-color);
-        font-family: var(--font-style);
-        font-size: 30px;
-        font-weight: bold;
-        margin-bottom: 10px;
-    }
+.the_best p {
+    color: var(--main-color);
+    font-family: var(--font-style);
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
 
-    h2 {
-        margin-bottom: 10px;
-        font-size: 40px;
-        /* width: 200px; */
-    }
-
+.the_best h2 {
+    margin-bottom: 10px;
+    font-size: 40px;
+    /* width: 200px; */
 }
 
 .the_best button {
@@ -407,23 +400,25 @@ table tr:nth-child(even) {
     margin-bottom: 90px;
     justify-content: center;
 
-    img {
-        width: 40px;
-        height: 40px;
+}
 
-    }
+.OUr_Trasted_patners img {
+    width: 40px;
+    height: 40px;
+
 }
 
 .main_parners {
     margin-top: 40px;
 
-    h2 {
-        text-align: center;
-        color: var(--main-color);
-        font-family: var(--font-style);
-        font-weight: bolder;
-        font-size: 30px;
-    }
+}
+
+.main_parners h2 {
+    text-align: center;
+    color: var(--main-color);
+    font-family: var(--font-style);
+    font-weight: bolder;
+    font-size: 30px;
 }
 
 
@@ -528,18 +523,19 @@ table tr:nth-child(even) {
     margin-bottom: 70px;
     padding: 40px 50px;
 
-    h6 {
-        text-align: center;
-        color: var(--secondry-color);
-        font-family: var(--font-style);
-        font-size: 30px;
-        font-weight: bold;
-    }
+}
 
-    h1 {
-        text-align: center;
-        margin-bottom: 60px;
-    }
+.about_Features h6 {
+    text-align: center;
+    color: var(--secondry-color);
+    font-family: var(--font-style);
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.about_Features h1 {
+    text-align: center;
+    margin-bottom: 60px;
 }
 
 /* Featured Cards */
@@ -560,25 +556,26 @@ table tr:nth-child(even) {
     box-shadow: 1px 1px 2px rgb(0, 0, 0, 0.8);
     padding: 10px 10px;
 
-    i {
-        font-size: 50px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        color: var(--secondry-color);
-    }
+}
 
-    h3 {
-        font-size: 20px;
-        font-weight: bolder;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        color: var(--main-color);
-    }
+.featucard1 i {
+    font-size: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: var(--secondry-color);
+}
 
-    p {
-        width: 280px;
-        font-size: 14px;
-    }
+.featucard1 h3 {
+    font-size: 20px;
+    font-weight: bolder;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: var(--main-color);
+}
+
+.featucard1 p {
+    width: 280px;
+    font-size: 14px;
 }
 
 
@@ -591,17 +588,18 @@ table tr:nth-child(even) {
     padding: 30px 50px;
     margin-bottom: 50px;
 
-    h6 {
-        text-align: center;
-        color: var(--secondry-color);
-        font-family: var(--font-style);
-        font-size: 40px;
-    }
+}
 
-    h1 {
-        text-align: center;
-        text-transform: capitalize;
-    }
+.About_AmazingTeam h6 {
+    text-align: center;
+    color: var(--secondry-color);
+    font-family: var(--font-style);
+    font-size: 40px;
+}
+
+.About_AmazingTeam h1 {
+    text-align: center;
+    text-transform: capitalize;
 }
 
 
@@ -621,20 +619,21 @@ table tr:nth-child(even) {
     margin-top: 30px;
     padding: 10px;
 
-    img {
-        width: 200px;
 
-    }
+}
 
-    h2 {
-        font-size: 20px;
-        color: var(--main-color);
-    }
+.team_person1 img {
+    width: 200px;
 
-    #person2 {
-        height: 300px;
-    }
+}
 
+.team_person1 h2 {
+    font-size: 20px;
+    color: var(--main-color);
+}
+
+.team_person1 #person2 {
+    height: 300px;
 }
 
 
@@ -645,18 +644,20 @@ table tr:nth-child(even) {
 .updatess {
     padding: 30px 50px;
     margin-bottom: 40px;
-    h6 {
-        text-align: center;
-        color: var(--secondry-color);
-        font-family: var(--font-style);
-        font-size: 30px;
-        font-weight: bold;
-    }
 
-    h1 {
-        text-align: center;
-        text-transform: capitalize;
-    }
+}
+
+.updatess h6 {
+    text-align: center;
+    color: var(--secondry-color);
+    font-family: var(--font-style);
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.updatess h1 {
+    text-align: center;
+    text-transform: capitalize;
 }
 
 /* upadate_cards */
@@ -676,27 +677,28 @@ table tr:nth-child(even) {
     display: flex;
     padding: 15px;
 
-    .info {
-        display: flex;
-        align-items: center;
-        font-weight: lighter;
-        gap: 20px;
-        margin-bottom: 10px;
 
-    }
+}
 
-    img {
-        width: 170px;
-    }
+.update-card1 .info {
+    display: flex;
+    align-items: center;
+    font-weight: lighter;
+    gap: 20px;
+    margin-bottom: 10px;
 
-    .main_info {
-        margin-left: 10px;
-    }
+}
 
-    h3 {
-        font-size: 14px;
-    }
+.update-card1 img {
+    width: 170px;
+}
 
+.update-card1 .main_info {
+    margin-left: 10px;
+}
+
+.update-card1 h3 {
+    font-size: 14px;
 }
 
 
@@ -711,41 +713,41 @@ table tr:nth-child(even) {
     margin-top: 40px;
     margin-bottom: 80px;
 
-    /* about_left */
-    .about_left {
-        h4 {
-            color: var(--secondry-color);
-            font-family: var(--font-style);
-            font-size: 30px;
-        }
+}
 
-        h1 {
-            font-size: 50px;
-            width: 600px;
-        }
+/* about_left */
 
-        p {
-            width: 400px;
-        }
+.about_lefth4 {
+    color: var(--secondry-color);
+    font-family: var(--font-style);
+    font-size: 30px;
+}
 
-        button {
-            border: none;
-            background-color: var(--secondry-color);
-            padding: 9px 16px;
-            margin-top: 12px;
-            color: var(--forth-color);
-            border-radius: 2px;
-        }
-    }
+.about_left h1 {
+    font-size: 50px;
+    width: 600px;
+}
 
-    /* About_right */
-    .About_right {
-        img {
-            width: 360px;
-            height: 300px;
-            border-radius: 12px;
-        }
-    }
+.about_left p {
+    width: 400px;
+}
+
+.about_left button {
+    border: none;
+    background-color: var(--secondry-color);
+    padding: 9px 16px;
+    margin-top: 12px;
+    color: var(--forth-color);
+    border-radius: 2px;
+}
+
+
+/* About_right */
+.About_right img {
+    width: 360px;
+    height: 300px;
+    border-radius: 12px;
+
 }
 
 
@@ -759,44 +761,41 @@ table tr:nth-child(even) {
     padding: 20px 40px;
     margin-top: 40px;
     margin-bottom: 80px;
-
-    /* left */
-    .testimonials_left {
-
-
-        img {
-            width: 300px;
-            height: 200px;
-            border-radius: 12px;
-        }
-
-    }
-
-    /* Testimonials_right */
-    .Testimonials_right {
-        h4 {
-            color: var(--secondry-color);
-            font-family: var(--font-style);
-            font-size: 30px;
-            margin-left: 130px;
-        }
-
-        h1 {
-            font-size: 50px;
-            width: 600px;
-        }
-
-        i {
-            color: var(--secondry-color);
-            font-size: 40px;
-            /* margin-left: 190px; */
-        }
-
-        p {
-            width: 400px;
-        }
-    }
 }
+
+/* left */
+.testimonials_left img {
+    width: 300px;
+    height: 200px;
+    border-radius: 12px;
+
+
+}
+
+/* Testimonials_right */
+
+.Testimonials_right h4 {
+    color: var(--secondry-color);
+    font-family: var(--font-style);
+    font-size: 30px;
+    margin-left: 130px;
+}
+
+.Testimonials_right h1 {
+    font-size: 50px;
+    width: 600px;
+}
+
+.Testimonials_right i {
+    color: var(--secondry-color);
+    font-size: 40px;
+    /* margin-left: 190px; */
+}
+
+.Testimonials_right p {
+    width: 400px;
+}
+
 
 
 /* Tours===================================================================Tours=========================== */
@@ -849,60 +848,62 @@ table tr:nth-child(even) {
 
 .tour-types {
     padding: 30px 40px;
-
-    h1 {
-        text-align: center;
-        color: var(--secondry-color);
-        font-size: 40px;
-    }
-
-    /* all cards */
-    .tourtypes_cards {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        padding: 20px 50px;
-        gap: 60px;
-    }
-
-    .tour-card1 {
-        margin-top: 40px;
-        background-color: var(--bacckground-color);
-        width: 300px;
-        border-radius: 5px;
-        overflow: hidden;
-        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-
-        img {
-            width: 300px;
-            height: 200px;
-
-        }
-
-
-        h3 {
-            color: var(--main-color);
-            margin-left: 4px;
-            margin-bottom: 4px;
-        }
-
-        p {
-            margin-left: 4px;
-            margin-bottom: 4px;
-        }
-
-        button {
-            border: none;
-            margin-bottom: 15px;
-            margin-top: 5px;
-            margin-left: 25%;
-            padding: 9px 29px;
-            background-color: var(--secondry-color);
-            color: var(--forth-color);
-            border-radius: 2px;
-        }
-    }
 }
+
+.tour-types h1 {
+    text-align: center;
+    color: var(--secondry-color);
+    font-size: 40px;
+}
+
+/* all cards */
+.tour-types .tourtypes_cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px 50px;
+    gap: 60px;
+}
+
+.tour-types .tour-card1 {
+    margin-top: 40px;
+    background-color: var(--bacckground-color);
+    width: 300px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.tour-types .tour-card1 img {
+    width: 300px;
+    height: 200px;
+
+}
+
+
+.tour-types .tour-card1 .tour-types h3 {
+    color: var(--main-color);
+    margin-left: 4px;
+    margin-bottom: 4px;
+}
+
+.tour-types .tour-card1 p {
+    margin-left: 4px;
+    margin-bottom: 4px;
+}
+
+.tour-types button {
+    border: none;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    margin-left: 25%;
+    padding: 9px 29px;
+    background-color: var(--secondry-color);
+    color: var(--forth-color);
+    border-radius: 2px;
+}
+
+
 
 
 
@@ -1047,54 +1048,60 @@ table tr:nth-child(even) {
 
 /* latestBlogTRavel section 1 */
 
-.latestBlogTRavel{
+.latestBlogTRavel {
     padding: 30px 200px;
     margin-bottom: 90px;
     margin-top: 10px;
-    h1{
-        font-size: 30px;
-        padding-bottom: 20px;
-        border-bottom: 2px solid ;
-        border-color: var(--main-color);
-        margin-bottom: 20px;
-        margin-top: 20px;
-        color: var(--secondry-color);
-        text-align: center;
-    }
+}
+
+.latestBlogTRavel h1 {
+    font-size: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid;
+    border-color: var(--main-color);
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: var(--secondry-color);
+    text-align: center;
+}
 
 
-    /* latestTravelCards */
-    .latestTravelCards{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 90px;
-    }
-    /* latestcard1 */
-    .latestcard1{
-        width: 270px;
-        height: 300px;
-        background-color: var(--bacckground-color);
-        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
-        border-radius: 3px;
-        padding: 10px 20px;
-        img{
-            width: 270px;
-            height: 160px;
-            border-radius: 1.5px;
-        }
-        h3{
-            color: var(--main-color);
-            font-family: var(--font-style);font-weight: bolder;
-            font-size: 20px;
-        }
-        a{
-            color: var(--main-color);
-        }
+/* latestTravelCards */
+.latestBlogTRavel .latestTravelCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 90px;
+}
 
-        p{
-            margin-top: 7px;
-            margin-bottom: 7px;
-        }
-    }
+/* latestcard1 */
+.latestBlogTRavel .latestcard1 {
+    width: 270px;
+    height: 300px;
+    background-color: var(--bacckground-color);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    padding: 10px 20px;
+}
+
+.latestBlogTRavel .latestcard1 img {
+    width: 270px;
+    height: 160px;
+    border-radius: 1.5px;
+}
+
+.latestBlogTRavel .latestcard1 h3 {
+    color: var(--main-color);
+    font-family: var(--font-style);
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.latestBlogTRavel .latestcard1 a {
+    color: var(--main-color);
+}
+
+.latestBlogTRavel .latestcard1 p {
+    margin-top: 7px;
+    margin-bottom: 7px;
 }
