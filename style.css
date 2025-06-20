@@ -1073,7 +1073,7 @@ table tr:nth-child(even) {
     /* latestcard1 */
     .latestcard1{
         width: 270px;
-        height: 260px;
+        height: 300px;
         background-color: var(--bacckground-color);
         box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
         border-radius: 3px;
