@@ -1,0 +1,1619 @@
+/* Import fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+
+/* Golbal page */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Our Css variables like or main color and fonts and soo on */
+
+:root {
+  /* colors */
+  --main-color: #16377e;
+  --secondry-color: #fc6167;
+  --third-color: #000000;
+  --forth-color: #ffff;
+  --fifth-color: yellow;
+
+  /* Font anme */
+  --font-style: "Dancing Script";
+}
+
+/* Home ============================================== */
+
+/* Mobile View 360px  */
+@media (max-width: 390px) {
+  /* mainheader */
+  .mainheader {
+    padding: 10px 10px;
+  }
+
+  .mainheader h1 {
+    font-size: 22px;
+  }
+
+  .mainheader .sign-login a {
+    display: none;
+  }
+
+  .mainheader ul {
+    display: none;
+  }
+
+  .mainheader i {
+    display: block;
+    font-size: 25px;
+    color: var(--secondry-color);
+    animation: bars-icon 0.6s ease;
+  }
+
+  @keyframes bars-icon {
+    from {
+      transform: scale(0.4);
+    }
+
+    to {
+      transform: scale(1);
+    }
+  }
+
+  /* mainHero */
+
+  .mainHero {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 30px;
+  }
+
+  .heroleft {
+    margin-top: 40px;
+    color: var(--forth-color);
+  }
+
+  .heroleft h4 {
+    color: var(--fifth-color);
+    font-family: var(--font-style);
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+
+  .heroleft h1 {
+    color: var(--forth-color);
+    font-size: 50px;
+    width: 200px;
+  }
+
+  .heroRight {
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .heroRight img {
+    width: 260px;
+    height: 270px;
+    border-radius: 10px;
+  }
+
+  /* Tour_types */
+
+  .Tour_types {
+    padding: 90px 0;
+    background-color: var(--bacckground-color);
+  }
+
+  .Tour_types h4 {
+    color: var(--main-color);
+    font-family: var(--font-style);
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .Tour_types h1 {
+    color: var(--third-color);
+    font-size: 30px;
+    text-align: center;
+    font-weight: bolder;
+  }
+
+  /* tour_cards */
+  .tour_cards {
+    display: block;
+    margin-left: 23%;
+  }
+
+  .tour_c1 {
+    background-color: var(--forth-color);
+    width: 120px;
+    height: 120px;
+    box-shadow: 1px 1px 9px rgb(0, 0, 0, 0.3);
+    padding: 10px 20px;
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  .tour_c1 i {
+    background-color: var(--fifth-color);
+    padding: 16px;
+    margin-bottom: 14px;
+    border-radius: 50%;
+    font-size: 30px;
+  }
+
+  /* Fetured_tours==== */
+
+  .Fetured_tours {
+    padding: 30px 0px;
+    color: var(--forth-color);
+    background-color: var(--main-color);
+  }
+
+  .Fetured_tours h4 {
+    text-align: center;
+    font-family: var(--font-style);
+    font-size: 29px;
+    color: var(--fifth-color);
+  }
+
+  .Fetured_tours h1 {
+    text-align: center;
+    font-size: 25px;
+  }
+
+  .Fetured_cards {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    margin-top: 30px;
+    justify-content: center;
+  }
+
+  /* Fetured_card1 */
+
+  .Fetured_card1 {
+    width: 250px;
+    height: 330px;
+    margin-top: 30px;
+    background-color: var(--bacckground-color);
+    color: var(--third-color);
+    border-radius: 4px;
+  }
+
+  .Fetured_card1 img {
+    width: 250px;
+    border-radius: 4px;
+  }
+
+  .Fetured_card1 p {
+    font-weight: lighter;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 4px;
+  }
+
+  .Fetured_card1 h2 {
+    margin-left: 4px;
+    font-size: 23px;
+  }
+
+  .Fetured_card1 .mainReview {
+    border-bottom: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 10px;
+  }
+
+  .Fetured_card1 .mainReview .clock {
+    font-size: 20px;
+    font-weight: lighter;
+    margin-right: 10px;
+  }
+
+  .Fetured_card1 .reviews {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: lighter;
+  }
+
+  .Fetured_card1 .reviews p {
+    background-color: var(--fifth-color);
+    padding: 3px;
+    border-radius: 2px;
+  }
+
+  .Fetured_card1 .price {
+    display: flex;
+    justify-content: space-around;
+    font-weight: lighter;
+  }
+
+  /* The Best===== */
+  .the_best {
+    padding: 20px 26px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 300px;
+    /* justify-content: space-between; */
+  }
+
+  .the_best p {
+    color: var(--main-color);
+    font-family: var(--font-style);
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .the_best h2 {
+    margin-bottom: 10px;
+    font-size: 40px;
+    /* width: 200px; */
+  }
+
+  .the_best button {
+    border: none;
+    padding: 10px 16px;
+    background-color: var(--main-color);
+    color: var(--forth-color);
+    border-radius: 3px;
+  }
+
+  .the_best table td {
+    border: 1px solid transparent;
+  }
+
+  table {
+    border-collapse: collapse;
+    margin-top: 20px;
+    width: 280px;
+  }
+
+  table td {
+    padding: 10px;
+  }
+
+  table tr:nth-child(odd) {
+    background-color: var(--secondry-color);
+    color: var(--forth-color);
+  }
+
+  table tr:nth-child(even) {
+    background-color: var(--main-color);
+    color: var(--forth-color);
+  }
+
+  .bestright img {
+    width: 100px;
+  }
+
+  .bestright .image1 {
+    position: absolute;
+    right: 60px;
+    top: 530px;
+    transform: skew(-20deg);
+  }
+
+  .bestright .image2 {
+    position: absolute;
+    right: 90px;
+    top: 460px;
+    border: 8px solid;
+    border-color: var(--main-color);
+  }
+
+  .bestright .image3 {
+    position: absolute;
+    left: 70px;
+    top: 470px;
+    transform: rotate(-36deg);
+  }
+
+  /* foooooter===== */
+
+  .Main_Footer {
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    padding-left: 30px;
+  }
+
+  .left_Footer {
+    border-right: none;
+    border-bottom: 1px solid;
+    border-color: var(--bacckground-color);
+    padding-bottom: 22px;
+  }
+
+  .CenterFooter {
+    border-right: none;
+    border-bottom: 1px solid;
+    border-color: var(--bacckground-color);
+    padding-bottom: 22px;
+  }
+
+  /* =======================================================ABout Page===================================================== */
+
+  /* Feature Cards */
+
+  .about_Features {
+    padding: 40px 0px;
+  }
+
+  .featucard1 {
+    width: 200px;
+  }
+
+  .featucard1 p {
+    width: 200px;
+  }
+
+  /*About_AmazingTeam  */
+  .About_AmazingTeam {
+    padding: 30px 0px;
+  }
+
+  /* update cards */
+
+  /*updatess  */
+  .updatess {
+    padding: 30px 0px;
+  }
+
+  .update-card1 {
+    flex-direction: column;
+  }
+
+  .update-card1 .info {
+    margin-top: 10px;
+  }
+
+  /* About_benadir_Travel */
+  .About_benadir_Travel {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    padding: 0;
+    margin-top: 40px;
+    margin-bottom: 80px;
+    margin-left: 30px;
+  }
+
+  /* about_left */
+
+  .About_benadir_Travel .about_left h4 {
+    color: var(--secondry-color);
+    font-family: var(--font-style);
+    font-size: 20px;
+  }
+
+  .About_benadir_Travel .about_left h1 {
+    font-size: 30px;
+    width: 300px;
+  }
+
+  .About_benadir_Travel .about_left p {
+    width: 300px;
+  }
+
+  .About_benadir_Travel .about_left button {
+    border: none;
+    background-color: var(--secondry-color);
+    padding: 9px 16px;
+    margin-top: 12px;
+    color: var(--forth-color);
+    border-radius: 2px;
+  }
+
+  /* About_right */
+  .About_benadir_Travel .About_right img {
+    width: 260px;
+    height: 250px;
+    border-radius: 12px;
+  }
+
+  /* Testimonials section(5) */
+  .Testimonials {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 20px;
+    padding: 10px;
+    margin-top: 40px;
+    margin-bottom: 80px;
+    margin-left: 30px;
+  }
+
+  /* left */
+  .Testimonials .testimonials_left img {
+    width: 200px;
+    height: 200px;
+    margin-left: 30px;
+  }
+
+  /* Testimonials_right */
+
+  .Testimonials .Testimonials_right h4 {
+    color: var(--secondry-color);
+    font-family: var(--font-style);
+    font-size: 20px;
+    margin: 0;
+  }
+
+  .Testimonials .Testimonials_right h1 {
+    font-size: 20px;
+    width: 200px;
+  }
+
+  .Testimonials .Testimonials_right i {
+    color: var(--secondry-color);
+    font-size: 20px;
+    /* margin-left: 20px; */
+  }
+
+  .Testimonials .Testimonials_right p {
+    font-size: 16px;
+    width: 200px;
+  }
+
+  /* =====================Tour Page================================= */
+
+  .destinations-grid {
+    grid-template-columns: 100%;
+    gap: 15px;
+  }
+
+  .popular-destinations h2 {
+    font-size: 24px;
+  }
+
+  .destination-card h3 {
+    font-size: 16px;
+  }
+
+  /* Tour Types section(2) */
+
+  .tour-types {
+    padding: 30px 40px;
+  }
+
+  .tour-types h1 {
+    text-align: center;
+    color: var(--secondry-color);
+    font-size: 40px;
+  }
+
+  /* all cards */
+  .tour-types .tourtypes_cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    gap: 60px;
+  }
+
+  .tour-types .tour-card1 {
+    margin-top: 40px;
+    background-color: var(--bacckground-color);
+    width: 400px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .tour-types .tour-card1 img {
+    width: 300px;
+    height: 200px;
+  }
+
+  .tour-types .tour-card1 h3 {
+    color: var(--main-color);
+    margin-left: 4px;
+    margin-bottom: 4px;
+  }
+
+  .tour-types .tour-card1 p {
+    margin-left: 4px;
+    margin-bottom: 4px;
+  }
+
+  .tour-types .tour-card1 button {
+    border: none;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    margin-left: 25%;
+    padding: 9px 29px;
+    background-color: var(--secondry-color);
+    color: white;
+    border-radius: 2px;
+  }
+
+  /* how-it-works */
+
+  .step-box {
+    width: 100%;
+  }
+
+  .how-it-works h2 {
+    font-size: 24px;
+  }
+
+  .step-box h3 {
+    font-size: 16px;
+  }
+
+  .step-box p {
+    font-size: 14px;
+  }
+
+  /* Why Travel With Us */
+
+  .why-box {
+    width: 100%;
+  }
+
+  .why-travel-with-us h2 {
+    font-size: 24px;
+  }
+
+  .why-box h3 {
+    font-size: 16px;
+  }
+
+  .why-box p {
+    font-size: 14px;
+  }
+
+  /* gallery section */
+  .tour-gallery h2 {
+    font-size: 24px;
+  }
+
+  .gallery-flex img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Blog page==========================================================================Blog====================== */
+
+  /* latestBlogTRavel section 1 */
+
+  .latestBlogTRavel {
+    padding: 10px 5px;
+  }
+
+  /* latestcard1 */
+  .latestcard1 {
+    width: 270px;
+    height: 300px;
+  }
+}
+
+/* Mobile View 391px - 600px================================================================================== */
+
+@media (min-width: 390px) and (max-width: 600px) {
+  /* mainheader */
+  .mainheader {
+    padding: 10px 10px;
+  }
+
+  .mainheader h1 {
+    font-size: 29px;
+  }
+
+  .mainheader .sign-login a {
+    display: none;
+  }
+
+  .mainheader ul {
+    display: none;
+  }
+
+  .mainheader i {
+    display: block;
+    font-size: 25px;
+    color: var(--secondry-color);
+    animation: bars-icon 0.6s ease;
+  }
+
+  @keyframes bars-icon {
+    from {
+      transform: scale(0.4);
+    }
+
+    to {
+      transform: scale(1);
+    }
+  }
+
+  /* mainHero */
+
+  .mainHero {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 30px;
+    background-color: var(--main-color);
+  }
+
+  .heroleft {
+    margin-top: 40px;
+    color: var(--forth-color);
+  }
+
+  .heroleft h4 {
+    color: var(--fifth-color);
+    font-family: var(--font-style);
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+
+  .heroleft h1 {
+    color: var(--forth-color);
+    font-size: 50px;
+    width: 200px;
+  }
+
+    .heroRight {
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .heroRight img {
+    width: 260px;
+    height: 270px;
+    border-radius: 10px;
+  }
+
+  /* Tour_types */
+
+  .Tour_types {
+    padding: 90px 0;
+    background-color: var(--bacckground-color);
+  }
+
+  .Tour_types h4 {
+    color: var(--main-color);
+    font-family: var(--font-style);
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .Tour_types h1 {
+    color: var(--third-color);
+    font-size: 30px;
+    text-align: center;
+    font-weight: bolder;
+  }
+
+  /* tour_cards */
+  .tour_cards {
+    display: block;
+    margin-left: 30%;
+  }
+
+  .tour_c1 {
+    background-color: var(--forth-color);
+    width: 120px;
+    height: 120px;
+    box-shadow: 1px 1px 9px rgb(0, 0, 0, 0.3);
+    padding: 10px 20px;
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  .tour_c1 i {
+    background-color: var(--fifth-color);
+    padding: 16px;
+    margin-bottom: 14px;
+    border-radius: 50%;
+    font-size: 30px;
+  }
+
+  /* Fetured_tours==== */
+
+  .Fetured_tours {
+    padding: 30px 90px;
+    color: var(--forth-color);
+    background-color: var(--main-color);
+  }
+
+  .Fetured_tours h4 {
+    text-align: center;
+    font-family: var(--font-style);
+    font-size: 29px;
+    color: var(--fifth-color);
+  }
+
+  .Fetured_tours h1 {
+    text-align: center;
+  }
+
+  .Fetured_cards {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    justify-content: center;
+  }
+
+  /* Fetured_card1 */
+
+  .Fetured_card1 {
+    width: 250px;
+    height: 330px;
+    margin-top: 30px;
+    background-color: var(--bacckground-color);
+    color: var(--third-color);
+    border-radius: 4px;
+  }
+
+  .Fetured_card1 img {
+    width: 250px;
+    border-radius: 4px;
+  }
+
+  .Fetured_card1 p {
+    font-weight: lighter;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 4px;
+  }
+
+  .Fetured_card1 h2 {
+    margin-left: 4px;
+    font-size: 23px;
+  }
+
+  .Fetured_card1 .mainReview {
+    border-bottom: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 10px;
+  }
+
+  .Fetured_card1 .mainReview .clock {
+    font-size: 20px;
+    font-weight: lighter;
+    margin-right: 10px;
+  }
+
+  .Fetured_card1 .reviews {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: lighter;
+  }
+
+  .Fetured_card1 .reviews p {
+    background-color: var(--fifth-color);
+    padding: 3px;
+    border-radius: 2px;
+  }
+
+  .Fetured_card1 .price {
+    display: flex;
+    justify-content: space-around;
+    font-weight: lighter;
+  }
+
+  /* The Best===== */
+  .the_best {
+    padding: 90px 40px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 300px;
+    /* justify-content: space-between; */
+  }
+
+  .the_best p {
+    color: var(--main-color);
+    font-family: var(--font-style);
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .the_best h2 {
+    margin-bottom: 10px;
+    font-size: 40px;
+    /* width: 200px; */
+  }
+
+  .the_best button {
+    border: none;
+    padding: 10px 16px;
+    background-color: var(--main-color);
+    color: var(--forth-color);
+    border-radius: 3px;
+  }
+
+  .the_best table td {
+    border: 1px solid transparent;
+  }
+
+  table {
+    border-collapse: collapse;
+    margin-top: 20px;
+    width: 300px;
+  }
+
+  table td {
+    padding: 10px;
+  }
+
+  table tr:nth-child(odd) {
+    background-color: var(--secondry-color);
+    color: var(--forth-color);
+  }
+
+  table tr:nth-child(even) {
+    background-color: var(--main-color);
+    color: var(--forth-color);
+  }
+
+  .bestright img {
+    width: 170px;
+    margin-top: 20px;
+  }
+
+  .bestright .image1 {
+    position: absolute;
+    right: 30px;
+    top: 590px;
+    transform: skew(-20deg);
+  }
+
+  .bestright .image2 {
+    position: absolute;
+    right: 90px;
+    top: 470px;
+    border: 8px solid;
+    border-color: var(--main-color);
+  }
+
+  .bestright .image3 {
+    position: absolute;
+    left: 70px;
+    top: 470px;
+    transform: rotate(-36deg);
+  }
+
+  /* foooooter===== */
+
+  .Main_Footer {
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    padding-left: 30px;
+  }
+
+  .left_Footer {
+    border-right: none;
+    border-bottom: 1px solid;
+    border-color: var(--bacckground-color);
+    padding-bottom: 22px;
+  }
+
+  .CenterFooter {
+    border-right: none;
+    border-bottom: 1px solid;
+    border-color: var(--bacckground-color);
+    padding-bottom: 22px;
+  }
+
+  /* =======================================================ABout Page===================================================== */
+
+  /* update cards */
+
+  /* Feature Cards */
+
+  .about_Features {
+    padding: 40px 0px;
+  }
+
+  .update-card1 {
+    flex-direction: column;
+    width: 200px;
+  }
+
+  .update-card1 .info {
+    margin-top: 10px;
+  }
+
+  .update-card1 h3 {
+    width: 200px;
+  }
+
+  /*About_AmazingTeam  */
+  .About_AmazingTeam {
+    padding: 30px 0px;
+  }
+
+  /*updatess  */
+  .updatess {
+    padding: 30px 0px;
+  }
+
+  /*About_AmazingTeam  */
+  .About_AmazingTeam {
+    padding: 30px 0px;
+  }
+
+  /* About_benadir_Travel */
+  .About_benadir_Travel {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    padding: 0;
+    margin-top: 40px;
+    margin-bottom: 80px;
+    margin-left: 70px;
+  }
+
+  /* about_left */
+
+  .About_benadir_Travel .about_left h4 {
+    color: var(--secondry-color);
+    font-family: var(--font-style);
+    font-size: 20px;
+  }
+
+  .About_benadir_Travel .about_left h1 {
+    font-size: 30px;
+    width: 300px;
+  }
+
+  .About_benadir_Travel .about_left p {
+    width: 300px;
+  }
+
+  .About_benadir_Travel .about_left button {
+    border: none;
+    background-color: var(--secondry-color);
+    padding: 9px 16px;
+    margin-top: 12px;
+    color: var(--forth-color);
+    border-radius: 2px;
+  }
+
+  /* About_right */
+  .About_benadir_Travel .About_right img {
+    width: 260px;
+    height: 250px;
+    border-radius: 12px;
+  }
+
+  /* Testimonials section(5) */
+  .Testimonials {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 80px;
+    padding: 0;
+    margin-top: 40px;
+    margin-bottom: 80px;
+    margin-left: 30px;
+  }
+
+  /* left */
+  .Testimonials .testimonials_left img {
+    width: 200px;
+    height: 200px;
+    margin-left: 30px;
+  }
+
+  /* Testimonials_right */
+  .Testimonials .Testimonials_right h4 {
+    color: var(--secondry-color);
+    font-family: var(--font-style);
+    font-size: 20px;
+    margin: 0;
+  }
+
+  .Testimonials .Testimonials_right h1 {
+    font-size: 24px;
+    width: 200px;
+  }
+
+  .Testimonials .Testimonials_right i {
+    color: var(--secondry-color);
+    font-size: 40px;
+    margin-left: 20px;
+  }
+
+  .Testimonials .Testimonials_right p {
+    width: 260px;
+  }
+
+  /* =====================Tour Page================================= */
+
+  .destinations-grid {
+    grid-template-columns: 45% 45%;
+    gap: 20px;
+  }
+
+  .popular-destinations h2 {
+    font-size: 26px;
+  }
+
+  .destination-card h3 {
+    font-size: 18px;
+  }
+
+  /* tour types all cards */
+
+  .tour-types {
+    padding: 0;
+  }
+
+  /* How it Howks */
+
+  .step-box {
+    width: 45%;
+  }
+
+  .how-it-works h2 {
+    font-size: 26px;
+  }
+
+  /* how-it-works */
+
+  .why-box {
+    width: 45%;
+  }
+
+  .why-travel-with-us h2 {
+    font-size: 26px;
+  }
+
+  /* gallery section */
+  .tour-gallery h2 {
+    font-size: 26px;
+  }
+
+  .gallery-flex img {
+    width: 45%;
+  }
+
+  /* Blog page==========================================================================Blog====================== */
+
+  /* latestBlogTRavel section 1 */
+
+  .latestBlogTRavel {
+    padding: 10px 5px;
+  }
+
+  /* latestcard1 */
+  .latestcard1 {
+    width: 270px;
+    height: 300px;
+  }
+}
+
+/* Tablet ======================================================================================================================================*/
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  /* mainheader */
+  .mainheader {
+    padding: 10px 10px;
+  }
+
+  .mainheader h1 {
+    font-size: 29px;
+  }
+
+  .mainheader .sign-login a {
+    transition: all 0.7s ease;
+    font-size: 10px;
+  }
+
+  .mainheader ul {
+    font-size: 15px;
+    margin: 0;
+  }
+
+  .mainheader i {
+    display: none;
+    font-size: 25px;
+    color: var(--secondry-color);
+    animation: bars-icon 0.6s ease;
+  }
+
+  @keyframes bars-icon {
+    from {
+      transform: scale(0.4);
+    }
+
+    to {
+      transform: scale(1);
+    }
+  }
+
+  /* mainHero */
+
+  .mainHero {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 30px;
+    background-color: var(--main-color);
+  }
+
+  .heroleft {
+    margin-top: 40px;
+    color: var(--forth-color);
+  }
+
+  .heroleft h4 {
+    color: var(--fifth-color);
+    font-family: var(--font-style);
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+
+  .heroleft h1 {
+    color: var(--forth-color);
+    font-size: 50px;
+    width: 200px;
+  }
+
+    .heroRight {
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .heroRight img {
+    width: 260px;
+    height: 270px;
+    border-radius: 10px;
+  }
+
+
+  /* Tour_types */
+
+  .Tour_types {
+    padding: 90px 10px;
+    background-color: var(--bacckground-color);
+  }
+
+  .Tour_types h4 {
+    color: var(--main-color);
+    font-family: var(--font-style);
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .Tour_types h1 {
+    color: var(--third-color);
+    font-size: 30px;
+    text-align: center;
+    font-weight: bolder;
+  }
+
+  /* tour_cards */
+  .tour_cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  .tour_c1 {
+    background-color: var(--forth-color);
+    width: 120px;
+    height: 120px;
+    box-shadow: 1px 1px 9px rgb(0, 0, 0, 0.3);
+    padding: 10px 20px;
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  .tour_c1 i {
+    background-color: var(--fifth-color);
+    padding: 16px;
+    margin-bottom: 14px;
+    border-radius: 50%;
+    font-size: 30px;
+  }
+
+  /* Fetured_tours==== */
+
+  .Fetured_tours {
+    padding: 30px 80px;
+    color: var(--forth-color);
+    background-color: var(--main-color);
+  }
+
+  .Fetured_tours h4 {
+    text-align: center;
+    font-family: var(--font-style);
+    font-size: 29px;
+    color: var(--fifth-color);
+  }
+
+  .Fetured_tours h1 {
+    text-align: center;
+  }
+
+  .Fetured_cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    margin-top: 30px;
+    justify-content: center;
+  }
+
+  /* Fetured_card1 */
+
+  .Fetured_card1 {
+    width: 250px;
+    height: 330px;
+    margin-top: 30px;
+    background-color: var(--bacckground-color);
+    color: var(--third-color);
+    border-radius: 4px;
+  }
+
+  .Fetured_card1 img {
+    width: 250px;
+    border-radius: 4px;
+  }
+
+  .Fetured_card1 p {
+    font-weight: lighter;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 4px;
+  }
+
+  .Fetured_card1 h2 {
+    margin-left: 4px;
+    font-size: 23px;
+  }
+
+  .Fetured_card1 .mainReview {
+    border-bottom: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 10px;
+  }
+
+  .Fetured_card1 .mainReview .clock {
+    font-size: 20px;
+    font-weight: lighter;
+    margin-right: 10px;
+  }
+
+  .Fetured_card1 .reviews {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: lighter;
+  }
+
+  .Fetured_card1 .reviews p {
+    background-color: var(--fifth-color);
+    padding: 3px;
+    border-radius: 2px;
+  }
+
+  .Fetured_card1 .price {
+    display: flex;
+    justify-content: space-around;
+    font-weight: lighter;
+  }
+
+  /* The Best===== */
+  .the_best {
+    padding: 90px 40px;
+    position: relative;
+    display: flex;
+    /* flex-direction: column; */
+    /* margin-bottom: 300px; */
+    justify-content: space-between;
+  }
+
+  .the_best p {
+    color: var(--main-color);
+    font-family: var(--font-style);
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .the_best h2 {
+    margin-bottom: 10px;
+    font-size: 40px;
+    /* width: 200px; */
+  }
+
+  .the_best button {
+    border: none;
+    padding: 10px 16px;
+    background-color: var(--main-color);
+    color: var(--forth-color);
+    border-radius: 3px;
+  }
+
+  .the_best table td {
+    border: 1px solid transparent;
+  }
+
+  table {
+    border-collapse: collapse;
+    margin-top: 20px;
+    width: 300px;
+  }
+
+  table td {
+    padding: 10px;
+  }
+
+  table tr:nth-child(odd) {
+    background-color: var(--secondry-color);
+    color: var(--forth-color);
+  }
+
+  table tr:nth-child(even) {
+    background-color: var(--main-color);
+    color: var(--forth-color);
+  }
+
+  .bestright img {
+    width: 150px;
+  }
+
+  .bestright .image1 {
+    position: absolute;
+    right: 30px;
+    top: 290px;
+    transform: skew(-20deg);
+  }
+
+  .bestright .image2 {
+    position: absolute;
+    right: 100px;
+    top: 180px;
+    border: 8px solid;
+    border-color: var(--main-color);
+  }
+
+  .bestright .image3 {
+    position: absolute;
+    right: 260px;
+    top: 190px;
+    transform: rotate(-36deg);
+  }
+
+  /* footer */
+  .Main_Footer {
+    background-color: var(--third-color);
+    color: var(--forth-color);
+    padding: 90px 20px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .left_Footer {
+    border-right: 1px solid;
+    border-color: var(--bacckground-color);
+    padding-right: 22px;
+  }
+
+  /* centerFooter */
+  .CenterFooter {
+    border-right: 1px solid;
+    border-color: var(--bacckground-color);
+    padding-right: 22px;
+  }
+
+  /* =======================================================ABout Page===================================================== */
+
+  /* Feature Cards */
+
+  .featucard1 {
+    width: 200px;
+  }
+
+  .featucard1 p {
+    width: 200px;
+  }
+
+  /* About_benadir_Travel */
+  .About_benadir_Travel {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+    padding: 0;
+    margin-top: 40px;
+    margin-bottom: 80px;
+  }
+
+  /* about_left */
+
+  .About_benadir_Travel .about_left h4 {
+    color: var(--secondry-color);
+    font-family: var(--font-style);
+    font-size: 20px;
+  }
+
+  .About_benadir_Travel .about_left h1 {
+    font-size: 30px;
+    width: 300px;
+  }
+
+  .About_benadir_Travel .about_left p {
+    width: 250px;
+  }
+
+  .About_benadir_Travel .about_left button {
+    border: none;
+    background-color: var(--secondry-color);
+    padding: 9px 16px;
+    margin-top: 12px;
+    color: var(--forth-color);
+    border-radius: 2px;
+  }
+
+  /* About_right */
+  .About_benadir_Travel .About_right img {
+    width: 360px;
+    height: 300px;
+    border-radius: 12px;
+  }
+
+  /* Testimonials section(5) */
+  .Testimonials {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 50px;
+    padding: 20px 40px;
+    margin-top: 40px;
+    margin-bottom: 80px;
+  }
+
+  /* left */
+  .Testimonials .testimonials_left img {
+    width: 230px;
+    height: 200px;
+    border-radius: 12px;
+  }
+
+  /* Testimonials_right */
+  .Testimonials .Testimonials_right {
+    width: 70%;
+  }
+
+  .Testimonials .Testimonials_right h4 {
+    color: var(--secondry-color);
+    font-family: var(--font-style);
+    font-size: 30px;
+    margin-left: 130px;
+  }
+
+  .Testimonials .Testimonials_right h1 {
+    font-size: 50px;
+    width: 600px;
+  }
+
+  .Testimonials .Testimonials_right i {
+    color: var(--secondry-color);
+    font-size: 40px;
+    /* margin-left: 190px; */
+  }
+
+  .Testimonials .Testimonials_right p {
+    width: 400px;
+  }
+
+  /* =====================Tour Page================================= */
+
+  .destinations-grid {
+    grid-template-columns: 200px 200px 200px;
+    gap: 25px;
+    justify-content: center;
+  }
+
+  .popular-destinations h2 {
+    font-size: 28px;
+  }
+
+  .destination-card h3 {
+    font-size: 20px;
+  }
+
+  /* Tour Types section(2) */
+
+  .tour-types {
+    padding: 30px 40px;
+  }
+
+  .tour-types h1 {
+    text-align: center;
+    color: var(--secondry-color);
+    font-size: 40px;
+  }
+
+  /* all cards */
+  .tour-types .tourtypes_cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px 20px;
+    gap: 20px;
+  }
+
+  .tour-types .tour-card1 {
+    margin-top: 40px;
+    background-color: var(--bacckground-color);
+    width: 300px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .tour-types .tour-card1 img {
+    width: 300px;
+    height: 200px;
+  }
+
+  .tour-types .tour-card1 h3 {
+    color: var(--main-color);
+    margin-left: 4px;
+    margin-bottom: 4px;
+  }
+
+  .tour-types .tour-card1 p {
+    margin-left: 4px;
+    margin-bottom: 4px;
+  }
+
+  .tour-types .tour-card1 button {
+    border: none;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    margin-left: 25%;
+    padding: 9px 29px;
+    background-color: var(--secondry-color);
+    color: white;
+    border-radius: 2px;
+  }
+
+  /* How it works  */
+
+  .step-box {
+    width: 45%;
+  }
+
+  .how-it-works h2 {
+    font-size: 28px;
+  }
+
+  /* gallery section */
+
+  .tour-gallery h2 {
+    font-size: 28px;
+  }
+
+  .gallery-flex img {
+    width: 48%;
+  }
+
+  /* Blog page==========================================================================Blog====================== */
+
+  /* latestBlogTRavel section 1 */
+
+  .latestBlogTRavel {
+    padding: 10px 15px;
+  }
+}

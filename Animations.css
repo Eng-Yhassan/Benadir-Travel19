@@ -1,0 +1,674 @@
+/* Import fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+
+/* Golbal page */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Our Css variables like or main color and fonts and soo on */
+
+
+:root {
+
+    /* colors */
+    --main-color: #16377e;
+    --secondry-color: #fc6167;
+    --third-color: #000000;
+    --forth-color: #ffff;
+    --fifth-color: yellow;
+
+    /* Font anme */
+    --font-style: "Dancing Script";
+}
+
+
+
+
+
+/* Desingyada soo noqnoqanaayo */
+
+li {
+    list-style: none;
+    color: black;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+
+/* leftIconsfooter */
+
+.leftIcons i {
+    font-size: 24px;
+    transition: all 0.5s ease-out;
+}
+
+.leftIcons i:hover {
+    color: var(--fifth-color);
+
+}
+
+/* CenterFooter */
+
+.CenterFooter p {
+    transition: all 1s ease-out;
+
+}
+
+.CenterFooter p:hover {
+    color: var(--fifth-color);
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+
+/* Home PAge ===========================*/
+
+/* mainheader */
+ul #li {
+    transition: all 0.7s ease;
+
+}
+
+
+ul li:hover {
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    color: var(--secondry-color);
+}
+
+.sign-login a {
+    transition: all 0.7s ease;
+    font-size: 20px;
+}
+
+.sign-login a:hover {
+    background-color: transparent;
+    border: 2px solid;
+    border-color: var(--secondry-color);
+    color: var(--secondry-color);
+}
+
+
+
+/* Animatio of header  */
+
+/* logo animatio */
+
+.mainheader h1 {
+    animation: logo 0.9s ease;
+    cursor: pointer;
+}
+
+@keyframes logo {
+    from {
+        transform: translateX(-400px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* Pages animation */
+
+.mainheader ul {
+    animation: pages 0.9s ease;
+
+}
+
+@keyframes pages {
+    from {
+        transform: translateY(-400px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+/* sign-login */
+
+.sign-login {
+    animation: sign-login 0.9s ease;
+}
+
+@keyframes sign-login {
+    from {
+        transform: scale(0.1);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+
+
+
+/* mainHero=== */
+/* heroLeft */
+.heroleft {
+    animation: heroleft 0.5s ease;
+}
+
+@keyframes heroleft {
+    from {
+        transform: translateX(-500px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* heroRight */
+
+/* .heroRight {
+    animation: heroRight 0.7s ease-in;
+}
+
+@keyframes heroRight {
+    from {
+        transform: scale(0.1);
+    }
+
+    to {
+        transform: scale(1);
+    }
+} */
+.heroRight img {
+  transition: all 0.5s ease;
+}
+
+
+
+.heroRight img:hover {
+    transform: rotate(-9deg);
+    box-shadow: 1px 1px 10px rgb(0, 0, 0, 0.5);    
+}
+
+
+
+/* Tour_types=== */
+
+.tour_cards {
+    animation: tour_cards ease;
+    animation-timeline: View();
+    animation-range: entry 1%;
+}
+
+.tour_c1 {
+    transition: all 0.4s ease-in;
+}
+
+.tour_c1:hover {
+    transform: scale(0.9);
+}
+
+@keyframes tour_cards {
+    from {
+        transform: scale(0.3);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+
+.Tour_types h4 {
+    animation: Tour_types 1s ease-out;
+}
+
+.Tour_types h1 {
+    animation: Tour_types 1s ease-out;
+}
+
+
+@keyframes Tour_types {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* .Fetured_cards */
+
+
+.Fetured_card1 {
+    transition: all 0.5s ease-in;
+}
+
+.Fetured_card1:hover {
+    box-shadow: 1px 1px 9px rgb(0, 0, 0, 0.9);
+    scale: 0.9;
+}
+
+/* .Fetured_tours */
+
+
+.Fetured_cards {
+    animation: Fetured_tours ease;
+    animation-timeline: View();
+    animation-range: entry 1%;
+}
+
+@keyframes Fetured_tours {
+    from {
+        transform: translateX(-500px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+
+
+/* The Best============  */
+
+.bestright .image3 {
+    transition: all 0.7s ease-in;
+    transform: rotate(-36deg);
+
+}
+
+
+.bestright .image3:hover {
+    transform: rotate(0);
+}
+
+.bestright .image1 {
+    transition: all 0.7s ease-in;
+    transform: skew(-20deg);
+
+}
+
+
+.bestright .image1:hover {
+    transform: skew(0);
+}
+
+
+
+
+.the_best button {
+    transition: all 0.7s ease-in;
+
+}
+
+.the_best button:hover {
+    background-color: transparent;
+    border: 1px solid;
+    border-color: var(--main-color);
+    color: var(--main-color);
+}
+
+
+
+
+/* the_best */
+
+
+.the_best {
+    animation: the_best ease;
+    animation-timeline: view();
+    animation-range: entry 4%;
+}
+
+
+@keyframes the_best {
+    from {
+        transform: translateX(-500px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+
+
+/* OUr_Trasted_patners */
+
+.OUr_Trasted_patners {
+    animation: OUr_Trasted_patners 3s ease-in-out infinite;
+}
+
+@keyframes OUr_Trasted_patners {
+    from {
+        transform: scale(0.1);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+
+/* footer */
+
+
+.RighFooter button {
+    transition: all 0.7s ease-in;
+
+}
+
+.RighFooter button:hover {
+    background-color: transparent;
+    border: 2px solid;
+    border-color: var(--fifth-color);
+    color: var(--fifth-color);
+}
+
+
+
+/* ==============================================ABout Page======================= */
+
+.featucard1 {
+    transition: all 1s ease;
+}
+
+.featucard1:hover {
+    transform: scale(0.8);
+}
+
+
+.AboutFeature__cards {
+    animation: AboutFeature__cards 1s ease-in-out;
+
+}
+
+@keyframes AboutFeature__cards {
+    from {
+        transform: translateX(-800px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+
+/* .team_persons */
+
+
+.team_person1 {
+    transition: all 0.8s ease;
+}
+
+.team_person1:hover {
+    transform: scale(0.8);
+}
+
+
+.Team_cards {
+    animation: Team_cards 2s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 4%;
+}
+
+@keyframes Team_cards {
+    from {
+        transform: translateY(400px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+
+/* upadate_cards */
+
+.update-card1 {
+    transition: all 0.7s ease;
+}
+
+.update-card1:hover {
+    transform: scale(0.8);
+    background-color: var(--main-color);
+    color: var(--forth-color);
+}
+
+
+/* About_benadir_Travel */
+
+#FindNow {
+    transition: all 0.7s ease;
+
+}
+
+#FindNow:hover {
+    background-color: transparent;
+    border: 2px solid;
+    border-color: var(--secondry-color);
+    color: var(--secondry-color);
+}
+
+
+
+.About_right img {
+    transition: all 0.7s ease;
+
+}
+
+.About_right img:hover {
+    transform: scale(0.9);
+}
+
+
+.About_benadir_Travel {
+    animation: Team_cards 3s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 10%;
+}
+
+
+
+/* Testimonials section(5) */
+
+.Testimonials_image1 {
+    transform: rotate(-39deg);
+    transition: all 0.7s ease;
+}
+
+.Testimonials_image1:hover {
+    transform: rotate(0);
+    box-shadow: 1px 1px 20px rgb(0, 0, 0, 0.9);
+}
+
+
+.Testimonials {
+    animation: Team_cards 3s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 10%;
+}
+
+
+/* Tours===================================================================Tours=========================== */
+
+.destination-card {
+    transition: transform 0.3s ease;
+}
+
+
+.destination-card:hover {
+    transform: translateY(-5px);
+}
+
+.popular-destinations {
+    animation: popular-destinations 1.3s ease-in-out;
+}
+
+@keyframes popular-destinations {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
+/* Tour Types section(2) */
+
+.tour-card1 {
+    transition: transform 0.3s ease;
+
+}
+
+.tour-card1:hover {
+    transform: translateY(-5px);
+
+}
+
+
+.tourtypes_cards {
+    animation: tourtypes_cards ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 2%;
+}
+
+
+@keyframes tourtypes_cards {
+    from {
+        transform: translatex(-400px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+#Types_of_tour {
+    transition: all 0.5s ease;
+}
+
+#Types_of_tour:hover {
+    background-color: transparent;
+    border: 2px solid;
+    border-color: var(--secondry-color);
+    color: var(--secondry-color);
+}
+
+
+/* .step-box */
+
+
+.step-box {
+    transition: all 0.3s ease;
+
+}
+
+.step-box:hover {
+    transform: translateY(-5px);
+}
+
+
+.steps-flex {
+    animation: steps-flex ease-in;
+    animation-timeline: view();
+    animation-range: entry 20%;
+}
+
+
+@keyframes steps-flex {
+    from {
+        transform: translatex(-300px);
+    }
+
+    to {
+        transform: translatex(0);
+    }
+}
+
+
+
+/* how-it-works */
+
+.why-box {
+    transition: transform 0.3s ease;
+
+}
+
+.why-box:hover {
+    transform: translateY(-5px);
+}
+
+.why-flex {
+    animation: why-flex ease-in;
+    animation-timeline: view();
+    animation-range: entry 20%;
+
+}
+
+
+@keyframes why-flex {
+    from {
+        transform: translatex(-300px);
+    }
+
+    to {
+        transform: translatex(0);
+    }
+
+}
+
+
+/* Gellary section */
+
+.gallery-flex img:hover {
+    transform: scale(1.05);
+}
+
+.gallery-flex img {
+    transition: transform 0.3s ease;
+
+}
+
+
+
+
+/* Blog page=====================================Blog page */
+
+
+/* latestTravelCards */
+.latestTravelCards {
+    animation: LatestTravelCards 0.6s ease-out;
+}
+
+@keyframes LatestTravelCards {
+    from {
+        transform: translateX(-400px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+
+/* latestcard1 */
+.latestcard1 {
+    transition: all 0.4s ease;
+}
+
+.latestcard1:hover {
+    transform: scale(1.1);
+}
